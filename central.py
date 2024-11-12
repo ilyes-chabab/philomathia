@@ -5,11 +5,11 @@ def simulate_central_limit(n_samples, n_trials, distribution='uniform', params=N
     """
     Simule le Théorème Central Limite.
     
-    :param n_samples: Nombre d'échantillons par essai.
-    :param n_trials: Nombre d'essais.
-    :param distribution: Type de distribution ('uniform', 'normal', 'exponential').
-    :param params: Paramètres de la distribution, si nécessaire.
-    :return: Les moyennes des échantillons.
+    param n_samples: Nombre d'échantillons par essai.
+    param n_trials: Nombre d'essais.
+    param distribution: Type de distribution ('uniform', 'normal', 'exponential').
+    param params: Paramètres de la distribution, si nécessaire.
+    return: Les moyennes des échantillons.
     """
     
     means = []
@@ -32,7 +32,7 @@ def plot_results(means):
     """
     Affiche l'histogramme des moyennes et la distribution normale théorique.
     
-    :param means: Liste des moyennes des échantillons.
+    param means: Liste des moyennes des échantillons.
     """
     plt.figure(figsize=(10, 6))
     plt.hist(means, bins=30, density=True, alpha=0.6, color='g')
